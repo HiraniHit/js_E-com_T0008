@@ -1,0 +1,21 @@
+@media (max-width:765px) {
+    .cart-product > div{
+        flex-direction: column;
+        min-width: 240px;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .cart-title{
+        text-align: center;
+    }
+}
+@media (max-width:400px) {
+    .cart-product > div{
+     
+        min-width: 235px;
+
+    }
+ 
+}

@@ -1,0 +1,30 @@
+@media (max-width:750px) {
+    .main-product{
+        flex-direction: column;
+        width:auto;
+        height: 600px;
+    }
+    .product{
+        margin-top: 200px;
+    }
+    .product-img{
+        width: 300px;
+    }
+    .product-info{
+        width: 300px;
+    }
+    .main-img > img{
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .sub-img > img{
+        width: 800px;
+        border-radius: 5px;
+    }
+    .sub-img > img:hover{
+        scale: 2;
+        object-fit: cover;
+    }
+}

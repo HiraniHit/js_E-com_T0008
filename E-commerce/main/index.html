@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./img/logo-web.png" type="image/x-icon">
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="responsive.css" />
+
+        <title>Electro</title>
+    </head>
+    <body onload="showProduct()">
+
+        <div class="loader"><div class="loader-div"><img src="img/logo-web.png" alt="web-img"><span class="web-name">Electro</span></div></div>
+        <div class="page hide">
+            <nav>
+                <div class="logo-web"><img src="img/logo-web.png" alt="web-img" class="main-logo"><span class="web-name">Electro</span></div>
+                <div class="search-input">
+                    <input
+                        class="searchBox"
+                        type="search"
+                        placeholder="Search By Name"
+                        oninput="searchProduct()"
+                    />
+                    <button class="search">Search</button>
+                    <!-- <div class="ul-div">
+                        <ul class="search-category">
+                            <li>Smartphones</li>
+                            <li>Televisions</li>
+                            <li>Audio</li>
+                            <li>Laptops</li>
+                            <li>Wearables</li>
+                            <li>Cameras</li>
+                            <li>Smart Home</li>
+                            <li>Computer Accessories</li>
+                            <li>Storage</li>
+                            <li>Monitors</li>
+                            <li>Home Appliances</li>
+                            <li>Accessories</li>
+                            <li>Networking</li>
+                            <li>Office Furniture</li>
+                            <li>Entertainment</li>
+                            <li>Health & Fitness</li>
+                            <li>Kitchen</li>
+                            <li>Printers</li>
+                            <li>Sports</li>
+                        </ul>
+                    </div> -->
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Product">Product</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li>
+                        <a href="../login/login.html"
+                            ><span class="material-symbols-outlined">
+                                account_circle
+                            </span></a>
+                    </li>
+                    <li>
+                        <a href="../cart/cart.html">
+                            <span class="material-symbols-outlined">
+                                shopping_cart
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../main/index.html" onclick="userDataDeleted()">
+                            <span class="material-symbols-outlined">
+                                logout
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section id="home" class="front-page">
+                <div class="front-div">
+                    <div class="front-page-info">
+                        <h1>Welcome to Your Website</h1>
+                        <p>
+                            This is the my E Commerce Website.I hope you like my all
+                            product and also buy it.Have a Great Day
+                        </p>
+                        <button class="seeMore">
+                            See More<span class="material-symbols-outlined"
+                                >arrow_right_alt</span
+                            >
+                        </button>
+                    </div>
+                    <div class="front-page-img">
+                        <img
+                            src="./img/pngegg.png"
+                            alt="electronic img"
+                            title="you can get all product"
+                        />
+                    </div>
+                </div>
+            </section>
+    
+            <section id="Product" class="product">
+                <div class="filter-div">
+                    <button onclick="openFilterMenu()">Filter</button>
+                    <h2>Our Products</h2>
+                </div>
+                <div class="filter-display hidden">
+                    <div>
+                        <div class="Category-vise">
+                            <h2 class="filtered-h2">Category :</h2>
+                            <div class="category-filter"></div>
+                        </div>
+                        <div>
+                            <h2 class="filtered-h2">Price :</h2>
+                            <div class="price-filter"></div>
+                        </div>
+                        <div>
+                            <h2 class="filtered-h2">Colors :</h2>
+                            <div class="color-filter">
+                                <button class="color-filter-btn White" onclick="getColor(this.value)" value="White">White</button>
+                                <button class="color-filter-btn Silver" onclick="getColor(this.value)" value="Silver">Silver</button>
+                                <button class="color-filter-btn SatinNickel" onclick="getColor(this.value)" value="Satin Nickel">Satin Nickel</button>
+                                <button class="color-filter-btn Gray" onclick="getColor(this.value)" value="Gray">Gray</button>
+                                <button class="color-filter-btn Pink" onclick="getColor(this.value)" value="Pink">Pink</button>
+                                <button class="color-filter-btn venetianBronze" onclick="getColor(this.value)" value="Venetian Bronze">Venetian Bronze</button>
+                                <button class="color-filter-btn Red" onclick="getColor(this.value)" value="Red">Red</button>
+                                <button class="color-filter-btn Green" onclick="getColor(this.value)" value="Green">Green</button>
+                                <button class="color-filter-btn Blue" onclick="getColor(this.value)" value="Blue">Blue</button>
+                                <button class="color-filter-btn Navy" onclick="getColor(this.value)" value="Navy">Navy</button>
+                                <button class="color-filter-btn Purple" onclick="getColor(this.value)" value="Purple">Purple</button>
+                                <button class="color-filter-btn Black" onclick="getColor(this.value)" value="Black">Black</button>
+                                <button class="color-filter-btn Refresh" onclick="getColor(this.value)" value="Refresh"><span class="material-symbols-outlined">
+                                    refresh
+                                    </span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-div"></div>
+                
+                
+            </section>
+    
+            <section class="brad-logo">
+                <div class="container-logo">
+                    <div><img src="./img/iphone.png" alt="brand-logo"></div>
+                    <div><img src="./img/lg.png" alt="brand-logo"></div>
+                    <div><img src="./img/mitsubishi.png" alt="brand-logo"></div>
+                    <div><img src="./img/oppo.png" alt="brand-logo"></div>
+                    <div><img src="./img/samsung.png" alt="brand-logo"></div>
+                    <div><img src="./img/sony.png" alt="brand-logo"></div>
+                    <div><img src="./img/vivo.png" alt="brand-logo"></div>
+                    <div><img src="./img/haier-removebg-preview.png" alt="brand-logo"></div>
+                    <div><img src="./img/whirlpool-removebg-preview.png" alt="brand-logo"></div>
+                </div>
+    
+            </section>
+    
+            <section id="blog" class="blog-section">
+                <h2>Blog</h2>
+                <div class="blog-class">
+                    <div>
+                        <img src="./img/blog-2.jpg" alt="blog-img" />
+                        <div>
+                            <p>
+                                Technology has evolved significantly in the past few
+                                years. From work to our day-to-day lives, we have
+                                multiple gadgets to get things done for us, making
+                                our lives more uncomplicated than ever! But to make
+                                sure we harness this power of technology to the
+                                fullest .
+                            </p>
+                            <span class="author">-Vijay Sales</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./img/blog-1.jpg" alt="blog-img" />
+                        <div>
+                            <p>
+                                OnePlus is a premium brand when it comes to mobile
+                                phones. But did you know OnePlus has a wide range of
+                                smart bands too? With its sleek design and advanced
+                                features, the OnePlus Smart-band is already a
+                                bestseller. But let’s take a look at what makes it
+                                the perfect fit for you.
+                            </p>
+                            <span class="author">-Hit Hirani</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="contact" class="contect-section">
+                <div class="form">
+                  <h2>Contacts</h2>
+                  <div class="main-form">
+                    <div class="info">
+                      <div>
+                        <img src="./img/location.png" alt="location" width="16"/>
+                        Surat , INDIA
+                      </div>
+                      <div>
+                          <img src="./img/call.png" alt="call" width="16" />Phone : 
+                          +91 9298278282
+                        </div>
+                        <div>
+                          <img src="./img/email.png" alt="email" width="16" />Email :
+                          devoteeinfotech@gmail.com
+                        </div>
+                    </div>
+                    <form id="form" action="https://api.web3forms.com/submit" method="post">
+                        <div class="inputs">
+                            <div>
+                                <input type="hidden" name="access_key" value="41d6570a-7c6d-43a1-8a8a-22cb3169ac0b">
+                                <input type="text" placeholder="Name" style="flex: 50%;" class="contect-input" name="first_name">
+                                <input type="email" placeholder="Email"style="flex: 50%;" class="contect-input" name="email">
+                            </div>
+                            <input type="text" name="massage" style="display: block;" placeholder="Message" class="contect-input">
+                            <button type="submit">Send</button>
+                          </div>
+                    </form>
+                  </div>
+                </div>
+              </section>
+    
+            <section class="footer">
+                <div class="footer-div">
+                    <div class="footer-first">
+                        <img src="img/instagram (1).png" alt="instagram" />
+                        <img src="img/twitter.png" alt="twitter" width="16" />
+                        <img src="img/facebook.png" alt="facebook" />
+                    </div>
+                    <div class="footer-second">
+                        <li>Home</li>
+                        <li>Services</li>
+                        <li>About</li>
+                        <li>Terms</li>
+                        <li>Private Policy</li>
+                    </div>
+                    <div class="footer-third">e-commerce&copy;2024</div>
+                </div>
+            </section>
+    
+            <div class="main-container"></div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+    <script src="../data.js"></script>
+</html>

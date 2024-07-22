@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background: rgb(156, 61, 188);
+    color: white;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-product{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.cart-product > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+.cart-product > div:hover{
+    scale: 1.03;
+}
+.cart-product > div >img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.cart-product > div >.quantity{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 10px;
+}
+.quantity > button{
+    width: fit-content;
+    height: fit-content;
+}
+.cart-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+.cart-header > button{
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 16px;
+    background-color: rgb(76, 0, 101);
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+
+}
+.quantity > button{
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(76, 0, 101);
+    color: white;
+    border-radius: 5px;
+}
+.delete-cart-btn{
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(76, 0, 101);
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.material-symbols-outlined{
+    font-size: 15px;
+    
+}
+.total-price{
+    background-color: rgb(76, 0, 101);
+    color: white;
+}

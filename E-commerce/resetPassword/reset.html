@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo-web.png" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <title>Electro</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Reset Password</h2>
+        <form id="oldPasswordForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="oldPassword" placeholder="Old Password" required>
+            <button type="submit">Verify Old Password</button>
+        </form>
+        <form id="newPasswordForm" class="hidden">
+            <input type="password" id="newPassword" placeholder="New Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm New Password" required>
+            <button type="submit">Reset Password</button>
+        </form>
+        <p id="message" class="message"></p>
+    </div>
+</body>
+<script src="reset.js"></script>
+</html>

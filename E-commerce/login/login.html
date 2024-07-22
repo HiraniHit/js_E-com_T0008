@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo-web.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <title>Electro</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome</h2>
+        <form>
+            <input id="email" type="email" placeholder="Email" required>
+            <input id="password" type="password" placeholder="Password" required>
+            <button id="log-in-btn" onclick="confirmLogin()">Log In</button>
+        </form>
+        <div class="links">
+            <a href="../forgotPassword/forgotPassword.html">Forgot Password?</a>
+            <a href="../createAccount/createAccount.html">Create Account</a>
+        </div>
+        <div class="links"><a href="../resetPassword/reset.html">Reset Password ?</a></div>
+    </div>
+</body>
+<script src="login.js"></script>
+<script src="../data.js"></script>
+</html>
