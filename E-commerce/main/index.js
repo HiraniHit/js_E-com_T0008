@@ -7,7 +7,7 @@ let page = document.querySelector(".page")
 setTimeout(()=>{
     loader.classList.add("hide")
     page.classList.remove("hide")
-},2000)
+},1000)
 
 function showProduct() {
     let productData = JSON.parse(localStorage.getItem("e-com_product-data"));
